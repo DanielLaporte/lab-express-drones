@@ -3,14 +3,23 @@
 <head>
   <title>Lista de Drones</title>
 </head>
-<body>
-  <h1>Lista de Drones</h1>
+<body class="list-page"> 
+  <h1>Drone List</h1>
   <ul>
     {{#each drones}}
+    <br>
+    <br>
       <li>
-        <p>Nombre: {{name}}</p>
-        <p>Hélices: {{propellers}}</p>
-        <p>Velocidad Máxima: {{maxSpeed}}</p>
+        <p>Name: {{name}}</p>
+        <p>Propellers: {{propellers}}</p>
+        <p>MaxSpeed: {{maxSpeed}}</p>
+        <br>
+        <a href="/drones/{{_id}}/edit">Edit</a>
+        <br>
+        <br>
+         <form action="/drones/{{_id}}/delete" method="POST">
+        <button type="submit">Delete</button>
+      </form>
       </li>
     {{/each}}
   </ul>

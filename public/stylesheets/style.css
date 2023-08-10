@@ -1,8 +1,42 @@
+
 body {
   padding: 50px;
-  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+  font: 18px 'Lucida Grande', Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00b7ff;
+  color: #060b0c;
+}
+
+.index-page {
+  background-image: url('/images/pexels-jeshootscom-442589.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center 30%;
+  background-size: 2000px; 
+  text-align: center;
+  font-family: 'Lucida Grande', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  color:rgb(243, 234, 234)
+}
+
+li {
+  list-style: none; /* Elimina los puntos */
+  text-align: left  /* Elimina el espacio izquierdo */
+}
+
+.list-page {
+  background-image: url('/images/sky-2009916_1280.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center 30%;
+  background-size: 2000px; 
+  background-color: azure;
+  text-align: center;
+  font-family: 'Lucida Grande', Helvetica, Arial, sans-serif;
+}
+
+.ul {
+  text-align: center;
+  font-weight: 700;
 }
